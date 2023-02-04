@@ -1,0 +1,178 @@
+/* making variables */
+:root{
+  --base:#8093c5;
+  --primary:#ddc4e0;
+  --secondary:#fcffff;
+  --dark:#000000;
+  --light:#fff;
+  --light2:#FFF1D0;
+}
+/* universal declaration */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.upper-body{
+  background-color: var(--base);
+  height: 100vh;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+/* header part starts */
+/* all the parent divs to make a proper 2% margin and padding  */
+header , .about , .table , .btn , .card , .contact, .footer{
+  margin: 2%;
+  padding: 2%;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* heading style */
+.heading{
+  font-size: 2rem;
+  font-weight: 900;
+  color:var(--light) ;
+}
+span{
+  color: var(--primary);
+}
+.nav-items{
+  width: 40%;
+  overflow: hidden;
+}
+.nav-items>a{
+  padding: 3%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color:var(--light) ;
+}
+.nav-items>a:hover{
+  color: var(--primary);
+}
+/* navigation ends */
+
+/* main starts */
+.img , .text, .content, .heading{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  line-height: 4.7rem;
+
+}
+img{
+  height: 20rem;
+ width: 20rem;
+ border-radius: 10%;
+}
+.text ,.content{
+  font-size: 2.3rem;
+  color: var(--light2);
+}
+/* main ends */
+
+/* about-me starts */
+.mid{
+  background-color: var(--primary);
+  padding: 3rem 0;
+}
+.mid-cnt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+.mid-cnt>p{
+  width: 60%;
+  font-size: 1.2rem;
+}
+.abt-img{
+  height: 13rem;
+  width: 13rem;
+}
+
+table, .btn{
+  margin: 0 auto;
+ width: 90%;
+ border-collapse: separate;
+ border-spacing: 0 25px;
+}
+.th{
+  font-size: 1.2rem;
+  text-align:left;
+
+}
+td{
+  font-size: 1.2rem;
+}
+table span{
+  font-weight: 900;
+  color: var(--dark);
+}
+.btn>a{
+  border: 1px solid var(--dark);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--base);
+  font-size: 1.2rem;
+  margin-left: 4.7rem;
+}
+.btn>a:hover{
+  border:1px solid var(--light) ;
+  color: var(--light);
+}
+/* about me ends */
+
+/* skills Srarts  */
+.skill{
+  background-color: var(--secondary);
+  padding: 120px 0;
+}
+/* conctact form starts */
+.last{
+  background-color: var(--base);
+  
+}
+.form{
+  margin-left:9.7rem ;
+  line-height: 6rem;
+  
+}
+input , textarea{
+  height: 4rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 2%;
+}
+textarea{
+  border-radius: 20px ;  
+}
+.up{
+  width: 40%;
+}
+.down{
+  width: 80%;
+}
+.contact>.btn>a{
+  color: var(--dark);
+  margin: 0 310px;
+  width: 90%;
+}
+footer{
+  background-color:var(--dark);
+}
+.logo{
+  margin: 0px;
+}
+.logos{
+  height: 5rem;
+  width: 5rem;
+}
